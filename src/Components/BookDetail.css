@@ -1,0 +1,21 @@
+.container{
+    margin: 10%;
+    display: flex;
+}
+
+.bookImage{
+    width: 20%;
+    flex-direction: column;
+    display: flex; 
+}
+.bookInfo{
+    margin-top: 0;
+    margin-left: 10%;
+}
+.book-img{
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
