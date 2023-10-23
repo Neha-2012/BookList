@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import "./BookInfo.css";
+import "./ToReadBookList.css";
 import { Button } from "@mui/material";
 
-function BookInfo(props) {
+function ToReadBookList(props) {
   
   return (
     <div className="book">
@@ -10,8 +10,8 @@ function BookInfo(props) {
         <h4>{props.bookInfo.title}</h4>
         <img src={props.bookInfo.formats["image/jpeg"]} className="book-img"></img>
       </Link>
-      <Button onClick={()=>props.addToReadListHandler(props.bookInfo)}className="addtoreadButton"variant="contained" size="small">Add to Read list</Button>
+      <Button onClick={()=>props.addToCompleteList(props.bookInfo)}className="addtoreadButton"variant="contained" size="small">Complete</Button>
     </div>
   );
 }
-export default BookInfo;
+export default ToReadBookList;

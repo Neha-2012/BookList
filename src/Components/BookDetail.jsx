@@ -6,7 +6,7 @@ const BookDetail = () => {
   const location = useLocation()
   const { book } = location.state
   return (
-    <div className="container">
+    <div className="bookDetailcontainer">
      <div className="bookImage" >
       <img
         src={book.formats["image/jpeg"]}
